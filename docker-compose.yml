@@ -2,7 +2,7 @@ version: '2'
 
 services:
   taskmanager_backend:
-    image: 'taskmanager_backend'
+    image: 'fedor_kotov/taskmanager_backend'
     container_name: taskmanager_backend
     depends_on:
       - taskmanager_db
