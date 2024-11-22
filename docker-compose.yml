@@ -16,14 +16,14 @@ services:
     expose:
       - "8081"
   taskmanager_frontend:
-    image: 'taskmanager_frontend'
+    image: 'fedor_kotov/taskmanager_frontend'
     container_name: taskmanager_frontend
     ports:
       - "8080:8080"
     expose:
       - "8080"
   taskmanager_db:
-    image: 'taskmanager_postgres'
+    image: 'fedor_kotov/taskmanager_postgres'
     container_name: taskmanager_db
     environment:
       - POSTGRES_USER=postgres
